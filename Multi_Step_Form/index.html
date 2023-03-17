@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <title>Multi step form</title>
+</head>
+<body>
+  
+  <main>
+    <h1 class="h1">Sign Up</h1>
+    <div class="container">
+      
+      <form class="front">
+        <input class="input" required>
+        <div class="flex error">
+          <p class="err-msg"></p>
+          <img src="icon-error.svg" class="err-img" alt="error">
+        </div>
+        <input type="button" value="&gt;" id="next">
+        <input type="button" value="&lt;" id="prev">
+        <p class="login">Already have an account?
+          <a href="#">Sign in</a>
+        </p>
+        <button id="signup">Sign up</button>
+        <p id="tc">
+          By clicking sign up, you are agreeing to our
+          <a href="#"> Terms and Conditions</a>
+        </p>
+      </form>
+      
+      <div class="back">
+        <p class="finish"></p>
+        <div class="loader"></div>
+        <p class="wait"></p>
+      </div>
+    </div>
+  </main>
+  
+</body>
+</html>

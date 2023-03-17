@@ -1,0 +1,53 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  height: 100%;
+}
+
+img, picture, video, svg, canvas{
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+  overflow-wrap: break-word;
+}
+
+body{
+  display: grid;
+  place-items: center;
+}
+
+.container{
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: grid;
+  background-color: white;
+  width: 60%;
+}
+
+.display_ctn{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.display{
+  display: block;
+  padding-block: 0.5rem;
+}
+
+.btn{
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1.2rem;
+  background-color: transparent;
+  user-select: none;
+}

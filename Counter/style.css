@@ -1,0 +1,49 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  height: 100%;
+}
+
+img, picture, video, svg, canvas{
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+  overflow-wrap: break-word;
+}
+
+body{
+  display: grid;
+  place-items: center;
+}
+
+.container{
+  margin-block: 1rem;
+}
+
+.display{
+  font-size: 5em;
+  display: block;
+  text-align: center; 
+}
+
+.btn_ctn{
+  display: flex;
+  gap: 0.65rem;
+}
+
+.btn{
+  font-size: 1.1rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.5rem;
+  outline: none;
+  user-select: none;
+}

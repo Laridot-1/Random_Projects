@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html, body{
+  height: 100%;
+}
+
+img, picture, video, svg, canvas{
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+  overflow-wrap: break-word;
+}
+
+body{
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--red);
+  background-image: url('bg-intro-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem;
+}
+
+.first{
+  color: var(--white);
+  text-align: center;
+  margin-block: 3rem;
+}
+
+.first h2{
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.first p{
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.trial{
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--blue);
+  margin-bottom: 1rem;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3rem hsl(249 10% 26% / 0.2);
+}
+.trial span{
+  color: var(--grayish-blue);
+  font-weight: 500;
+}
+
+form{
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 1.2rem 1rem;
+  display: grid;
+  box-shadow: 0 0.3rem hsl(249 10% 26% / 0.3);
+}
+
+form div{
+  display: grid;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+input{
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.9rem 1.3rem;
+  border-radius: 0.3rem;
+  border: 1px solid var(--grayish-blue);
+}
+
+input:placeholder-shown{
+  color: var(--grayish-blue);
+}
+
+input:focus-within{
+  border: 1px solid var(--blue);
+}
+
+.invalid{
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--red);
+  margin-top: 0.25rem;
+  display: none;
+}
+
+.err{
+  position: absolute;
+  top: 0.9rem;
+  right: 1.3rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  display: none;
+}
+
+input[type="button"]{
+  background-color: var(--green);
+  border: none;
+  color: var(--white);
+  text-transform: uppercase;
+  box-shadow: 0 0.2rem hsl(154 45% 47%);
+  margin-bottom: 0.75rem;
+  transition: 0.1s;
+}
+
+.tc{
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--grayish-blue);
+  text-align: center;
+  line-height: 1.4;
+}
+.tc a{
+  font-weight: 600;
+  color: var(--red);
+  text-decoration: none;
+  display: inline-block;
+}
+
+form div.inval input{
+  border: 1px solid var(--red);
+}
+form div.val input{
+  border: 1px solid var(--green);
+}
+
+form div.inval p{
+  display: block;
+}
+form div.val p{
+  display: none;
+}
+
+form div.inval span{
+  display: block;
+}
+form div.val span{
+  display: none;
+}
+
+
+@media (min-width: 1000px){
+  body {
+    background-image: url('bg-intro-desktop.png');
+  }
+  
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    padding: 5rem;
+  }
+  
+  .first{
+    text-align: left;
+  }
+}
+
+:root{
+  --white: hsl(240, 100%, 100%);
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
